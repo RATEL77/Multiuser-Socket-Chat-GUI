@@ -29,8 +29,6 @@ def receive():
     while True:
         try:
             msg = client_socket.recv(4096).decode()
-
-            # 시간
             timestamp = time.strftime("%H:%M:%S")
             display_msg = f"[{timestamp}] {msg}"
 
@@ -53,6 +51,10 @@ def send():
     msg = msg_entry.get()
     if msg:
         client_socket.send(msg.encode())
+        timestamp = time.strftime("%H:%M:%S")
+        display_msg = f"[{timestamp}] me ({nickname}): {msg}"
+        chat_log.insert(tk.END, display_msg + "\n", "me")
+        chat_log.see(tk.END)
         msg_entry.delete(0, tk.END)
 
 def send_image():
@@ -79,6 +81,7 @@ chat_log.pack()
 
 chat_log.tag_config("whisper", foreground="DarkOrchid")
 chat_log.tag_config("system", foreground="Gray", font="맑은고딕 9 italic")
+chat_log.tag_config("me", foreground="black", font="맑은고딕 10 bold")
 
 msg_entry = tk.Entry(root, width=40)
 msg_entry.pack(side=tk.LEFT, padx=5)
