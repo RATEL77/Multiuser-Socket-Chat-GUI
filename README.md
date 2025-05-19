@@ -1,4 +1,6 @@
-# 💬 Multi-User Socket Chat (with GUI)
+# 🇺🇸 English Version
+
+## 💬 Multi-User Socket Chat (with GUI)
 
 This project is a real-time multi-user chat application built with Python's `socket` module and `Tkinter` GUI.  
 It supports nickname identification, private messaging, image transmission, message timestamps, user color mapping, and system messages.
@@ -33,6 +35,16 @@ python gui_client.py
 
 ---
 
+## 🧱 Tech Stack
+
+- **Language**: Python 3.x  
+- **GUI**: Tkinter  
+- **Networking**: socket, socketserver  
+- **Concurrency**: threading  
+- **Version Control**: Git, GitHub  
+
+---
+
 ## 📂 File Structure
 
 | File             | Description                                |
@@ -43,7 +55,13 @@ python gui_client.py
 
 ---
 
-# 💬 다중 사용자 소켓 채팅 (GUI 포함)
+&nbsp;
+
+---
+
+# 🇰🇷 한국어 버전
+
+## 💬 다중 사용자 소켓 채팅 (GUI 포함)
 
 이 프로젝트는 Python의 `socket`과 `Tkinter`를 이용해 만든 실시간 채팅 프로그램입니다.  
 다중 사용자 접속, 닉네임 설정, 귓속말, 이미지 전송, 타임스탬프, 접속자 수 표시, 사용자별 색상 등 다양한 기능을 제공합니다.
@@ -75,6 +93,16 @@ python gui_client.py
 - 입장/퇴장 시 시스템 메시지 표시  
 - 사용자별 고유 색상 자동 지정  
 - `/users` 명령어로 현재 접속자 목록 확인  
+
+---
+
+## 🧱 기술 스택
+
+- **언어**: Python 3.x  
+- **GUI**: Tkinter  
+- **네트워킹**: socket, socketserver  
+- **동시성 처리**: threading  
+- **버전 관리**: Git, GitHub  
 
 ---
 
